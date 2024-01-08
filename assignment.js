@@ -13,16 +13,16 @@ function isFirstElementPrime(arr) {
 
 function isPrime(num) {
     if (num <= 1) return false;
-    for (let i = 2; i <= Math.sqrt(num); i++) {
+    for (let i = 2; i < num; i++) {
         if (num % i === 0) {
             return false;
         }
     }
     return true;
 }
-
 const myArray = [7, 10, 15, 3, 5];
 isFirstElementPrime(myArray);
+
 
 
 
@@ -43,11 +43,12 @@ function MostFrequentItem(arr) {
         }
     }
 
-    console.log(`Most frequent item: ${mostFrequentItem}`);
+    console.log("Most frequent item: " + mostFrequentItem);
 }
 
 const Array = [1, 2, 3, 2, 4, 2, 5, 2, 6];
 MostFrequentItem(Array);
+
 
 
 // Third Question
@@ -73,9 +74,9 @@ function sumOfSquares(arr) {
     return sum;
 }
 
-
 const Arrays = [1, 2, 3, 4, 5];
 const result = sumOfSquares(Arrays);
 
-console.log('Sum of squares: ' + result);
+console.log("Sum of squares: " + result);
+
 
